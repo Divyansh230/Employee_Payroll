@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER (same as list page) -->
+    <div class="header">
+        <div class="logo">
+            <div class="logo-box">EP</div>
+            <div class="logo-text">
+                <span>EMPLOYEE</span>
+                <span style="color:#42515F">PAYROLL</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM CARD -->
+    <div class="form-container">
+
+        <h2 class="form-title">Employee Payroll Form</h2>
+
+        <form class="employee-form">
+
+            <!-- NAME -->
+            <div class="form-row">
+                <label>Name</label>
+                <input type="text" placeholder="Enter Name">
+            </div>
+
+            <!-- PROFILE IMAGE -->
+            <div class="form-row">
+                <label>Profile Image</label>
+                <div class="profile-images">
+                    <input type="radio" name="profile">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+                    <input type="radio" name="profile">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+                    <input type="radio" name="profile">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+                    <input type="radio" name="profile">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg">
+                </div>
+            </div>
+
+            <!-- GENDER -->
+            <div class="form-row">
+                <label>Gender</label>
+                <div class="inline">
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </div>
+            </div>
+
+            <!-- DEPARTMENT -->
+            <div class="form-row">
+                <label>Department</label>
+                <div class="inline">
+                    <input type="checkbox"> HR
+                    <input type="checkbox"> Sales
+                    <input type="checkbox"> Finance
+                    <input type="checkbox"> Engineer
+                    <input type="checkbox"> Others
+                </div>
+            </div>
+
+            <!-- SALARY -->
+            <div class="form-row">
+                <label>Salary</label>
+                <select>
+        <option>Select Salary</option>
+        <option>₹10,000</option>
+        <option>₹20,000</option>
+        <option>₹30,000</option>
+      </select>
+            </div>
+
+            <!-- START DATE -->
+            <div class="form-row">
+                <label>Start Date</label>
+                <div class="inline">
+                    <select><option>Day</option></select>
+                    <select><option>Month</option></select>
+                    <select><option>Year</option></select>
+                </div>
+            </div>
+
+            <!-- NOTES -->
+            <div class="form-row">
+                <label>Notes</label>
+                <textarea rows="3"></textarea>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="form-actions">
+                <a href="index.html" class="btn gray">Cancel</a>
+                <button type="submit" class="btn green">Submit</button>
+                <button type="reset" class="btn gray">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
