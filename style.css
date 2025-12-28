@@ -128,7 +128,7 @@
         /* BADGES */
         
         .badge {
-            font-size: x-large;
+            color: black;
             background: #E9FEA5;
             border-radius: 13px;
             padding: 4px 12px;
@@ -270,4 +270,12 @@
             table {
                 min-width: 800px;
             }
+        }
+        /* ===== FORCE THEAD COLOR (BOOTSTRAP OVERRIDE FIX) ===== */
+        
+        table thead,
+        table thead tr,
+        table thead th {
+            background-color: #42515F !important;
+            color: #ffffff !important;
         }
