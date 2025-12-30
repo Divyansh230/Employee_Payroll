@@ -1,0 +1,15 @@
+{
+  "employee": [
+    {
+      "name": "John",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "HR",
+        "Others"
+      ],
+      "salary": "₹10,000",
+      "startDate": "18 July 2009"
+    }
+  ]
+}

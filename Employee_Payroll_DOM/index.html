@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Payroll</title>
+
+    <!-- BOOTSTRAP CSS (SAFE) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- YOUR CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <div class="logo">
+                <div class="logo-box">EP</div>
+                <div class="logo-text">
+                    <span>EMPLOYEE</span>
+                    <span style="color:#42515F">PAYROLL</span>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <input type="text" class="form-control search-input" id="searchInput" placeholder="🔍Search employees...">
+                <a href="add_user.html">
+                    <button class="add-btn">+ Add User</button>
+                </a>
+            </div>
+
+        </div>
+
+        <h3 id="empd">Employee Details</h3>
+
+        <!-- TABLE -->
+        <div class="table-wrapper table-responsive">
+            <table class=" table mb-0">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>GENDER</th>
+                        <th>DEPARTMENT</th>
+                        <th>SALARY</th>
+                        <th>START DATE</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+
+                <tbody id="employeeTableBody">
+
+                    <tr>
+                        <td class="name">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg"> Amarra Shashanka Keerthi Kumar
+                        </td>
+                        <td>Female</td>
+                        <td>
+                            <span class="badge">Sales</span>
+                            <span class="badge">HR</span>
+                            <span class="badge">Finance</span>
+                        </td>
+                        <td>₹ 10,000</td>
+                        <td>29 Oct 2019</td>
+                        <td>🗑 ✏️</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

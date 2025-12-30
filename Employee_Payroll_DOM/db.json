@@ -1,0 +1,79 @@
+{
+  "employees": [
+    {
+      "id": "8687",
+      "name": "Divyansh Singh",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "30000",
+      "startDate": "17 September 2009"
+    },
+    {
+      "id": "e2ca",
+      "name": "Tiger",
+      "gender": "Female",
+      "profileImg": "https://randomuser.me/api/portraits/men/45.jpg",
+      "departments": [
+        "Sales",
+        "Finance"
+      ],
+      "salary": "10000",
+      "startDate": "20 July 2011"
+    },
+    {
+      "id": "d596",
+      "name": "Divyansh Singh",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "HR",
+        "Engineer"
+      ],
+      "salary": "30000",
+      "startDate": "19 August 2011"
+    },
+    {
+      "id": "2759",
+      "name": "Divyansh Singh",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "HR",
+        "Engineer"
+      ],
+      "salary": "30000",
+      "startDate": "19 August 2011"
+    },
+    {
+      "id": "5d8c",
+      "name": "Divyansh Singh",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "30000",
+      "startDate": "18 October 2009"
+    },
+    {
+      "id": "561b",
+      "name": "Divyansh Singh",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "30000",
+      "startDate": "18 October 2009"
+    }
+  ]
+}
