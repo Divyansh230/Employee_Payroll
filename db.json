@@ -1,0 +1,160 @@
+{
+  "employees": [
+    {
+      "id": "b45b",
+      "name": "Divyansh Singh",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "Sales",
+        "Finance"
+      ],
+      "salary": "30000",
+      "startDate": "16 December 2025"
+    },
+    {
+      "id": "eccd",
+      "name": "Divyansh Singh",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "HR",
+        "Sales",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "30000",
+      "startDate": "19 September 2025"
+    },
+    {
+      "id": "1767084316835",
+      "name": "Don",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/45.jpg",
+      "departments": [
+        "HR",
+        "Engineer"
+      ],
+      "salary": "30000",
+      "formattedSalary": "₹ 30,000",
+      "startDate": "18 September 2010"
+    },
+    {
+      "id": "1767084458207",
+      "name": "Divyansh Singh",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "30000",
+      "formattedSalary": "₹ 30,000",
+      "startDate": "20 November 2010"
+    },
+    {
+      "id": "1767084488856",
+      "name": "Raju Rastogi",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/45.jpg",
+      "departments": [
+        "HR",
+        "Finance",
+        "Others"
+      ],
+      "salary": "30000",
+      "formattedSalary": "₹ 30,000",
+      "startDate": "16 September 2012"
+    },
+    {
+      "id": "1767084533109",
+      "name": "Jacklin Fernandiz",
+      "gender": "Female",
+      "profileImg": "https://randomuser.me/api/portraits/women/65.jpg",
+      "departments": [
+        "HR",
+        "Sales",
+        "Finance"
+      ],
+      "salary": "10000",
+      "formattedSalary": "₹ 10,000",
+      "startDate": "20 November 2008"
+    },
+    {
+      "id": "1767084571960",
+      "name": "Wonder Women",
+      "gender": "Female",
+      "profileImg": "https://randomuser.me/api/portraits/women/44.jpg",
+      "departments": [
+        "Sales",
+        "Finance"
+      ],
+      "salary": "20000",
+      "formattedSalary": "₹ 20,000",
+      "startDate": "20 September 2010"
+    },
+    {
+      "id": "1767084605102",
+      "name": "Tiger",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/45.jpg",
+      "departments": [
+        "HR"
+      ],
+      "salary": "10000",
+      "formattedSalary": "₹ 10,000",
+      "startDate": "20 October 2008"
+    },
+    {
+      "id": "1767084637971",
+      "name": "Arpit Gupta",
+      "gender": "Female",
+      "profileImg": "https://randomuser.me/api/portraits/women/65.jpg",
+      "departments": [
+        "Sales"
+      ],
+      "salary": "10000",
+      "formattedSalary": "₹ 10,000",
+      "startDate": "20 September 2009"
+    },
+    {
+      "id": "1767086320857",
+      "name": "Divyansh",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "Sales"
+      ],
+      "salary": "10000",
+      "formattedSalary": "₹ 10,000",
+      "startDate": "17 September 2010"
+    },
+    {
+      "id": "1767086969960",
+      "name": "Ayushman",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/45.jpg",
+      "departments": [
+        "Sales",
+        "Finance"
+      ],
+      "salary": "10000",
+      "formattedSalary": "₹ 10,000",
+      "startDate": "18 October 2010"
+    },
+    {
+      "id": 1767159018164,
+      "name": "Super Man",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "Sales",
+        "Finance"
+      ],
+      "salary": "20000",
+      "formattedSalary": "₹ 20,000",
+      "startDate": "19 August 2011"
+    }
+  ]
+}

@@ -234,6 +234,14 @@
             background: #E0E0E0;
             color: #42515F;
         }
+        
+        .field {
+            color: red;
+            display: none;
+            margin-left: 180px;
+            margin-top: -20px;
+            margin-bottom: 10px;
+        }
         /* ================= RESPONSIVE ================= */
         
         @media (max-width: 1024px) {
