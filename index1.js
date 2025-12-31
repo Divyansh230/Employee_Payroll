@@ -2,9 +2,7 @@ $(document).ready(function() {
 
     const $form = $("#empForm");
 
-    /* ==========================
-       ADD / UPDATE EMPLOYEE
-    ========================== */
+    //Adding and Updating Employee
 
     if ($form.length) {
         $form.on("submit", function(e) {

@@ -131,7 +131,7 @@ function renderEmployeesTable(filterText = "") {
             <td>${emp.formattedSalary}</td>
             <td>${emp.startDate}</td>
             <td>
-                <button class="delete-btn">🗑</button>
+                <button class="delete-btn ">🗑</button>
                 <button class="update-btn">✏️</button>
             </td>
         </tr>
