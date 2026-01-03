@@ -19,30 +19,78 @@ if (form) {
         const month = document.getElementById('month').value;
         const year = document.getElementById('year').value;
 
+        let isValid = true;
+
+        // NAME
         if (name === '') {
             document.getElementById('name').style.display = 'block';
-            return;
+            document.getElementById('empName').classList.add('input-error');
+            isValid = false;
+        } else {
+            document.getElementById('name').style.display = 'none';
+            document.getElementById('empName').classList.remove('input-error');
         }
+
+        // GENDER
         if (gender === '') {
             document.getElementById('gender').style.display = 'block';
-            return;
+            isValid = false;
+        } else {
+            document.getElementById('gender').style.display = 'none';
         }
+
+        // PROFILE IMAGE
         if (profileImg === '') {
             document.getElementById('profile').style.display = 'block';
-            return;
+            isValid = false;
+        } else {
+            document.getElementById('profile').style.display = 'none';
         }
+
+        // DEPARTMENT
         if (departments.length === 0) {
             document.getElementById('department').style.display = 'block';
-            return;
+            isValid = false;
+        } else {
+            document.getElementById('department').style.display = 'none';
         }
+
+        // SALARY
         if (salary === '') {
-            document.getElementById('salary').style.display = 'block';
-            return;
+            document.getElementById('salaryError').style.display = 'block';
+            document.getElementById('salary').classList.add('input-error');
+            isValid = false;
+        } else {
+            document.getElementById('salaryError').style.display = 'none';
+            document.getElementById('salary').classList.remove('input-error');
         }
+
+        // DATE
         if (day === '' || month === '' || year === '') {
             document.getElementById('join').style.display = 'block';
-            return;
+            document.getElementById('day').classList.add('input-error');
+            document.getElementById('month').classList.add('input-error');
+            document.getElementById('year').classList.add('input-error');
+            isValid = false;
+        } else {
+            document.getElementById('join').style.display = 'none';
+            document.getElementById('day').classList.remove('input-error');
+            document.getElementById('month').classList.remove('input-error');
+            document.getElementById('year').classList.remove('input-error');
         }
+
+        // FINAL DECISION
+        if (!isValid) {
+            return; // ❗ ab sirf ek hi return
+        }
+
+        // ✅ All validations passed
+        console.log("Form submitted successfully");
+
+
+        // ✅ form valid hai
+        console.log("Form submitted successfully");
+
 
 
         const startDate = `${day} ${month} ${year}`;
@@ -122,6 +170,7 @@ function renderEmployeesTable(filterText = "") {
 
         const row = `
         <tr data-index="${index}">
+        
             <td class="name">
                 <img src="${emp.profileImg}">
                 ${emp.name}
@@ -185,6 +234,17 @@ document.addEventListener("click", function(e) {
 // Emplementing Search Functionality
 
 const searchInput = document.getElementById("searchInput");
+const icon = document.getElementById('icon');
+
+if (icon) {
+    icon.addEventListener('mouseover', function() {
+        searchInput.style.display = 'inline';
+    });
+
+    icon.addEventListener('click', function() {
+        searchInput.style.display = 'none';
+    });
+}
 
 if (searchInput) {
     searchInput.addEventListener("keyup", function() {

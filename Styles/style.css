@@ -1,0 +1,456 @@
+                                /* ================= GLOBAL ================= */
+                                
+                                * {
+                                    box-sizing: border-box;
+                                }
+                                
+                                body {
+                                    margin: 0;
+                                    background: #F7F7F7;
+                                    font-family: Arial, sans-serif;
+                                }
+                                /* ================= HEADER ================= */
+                                
+                                .header {
+                                    background-color: #FFFFFF;
+                                    height: 106px;
+                                    padding: 16px 24px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                }
+                                
+                                .logo {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+                                }
+                                
+                                .logo-box {
+                                    width: 50px;
+                                    height: 47px;
+                                    background-color: #7CB342;
+                                    color: white;
+                                    font-weight: bold;
+                                    border-radius: 5px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                
+                                .logo-text span {
+                                    display: block;
+                                    font-size: 22px;
+                                    font-weight: bold;
+                                    color: #82A70C;
+                                }
+                                /* ================= HEADER ACTIONS ================= */
+                                
+                                .header-actions {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 15px;
+                                }
+                                
+                                .add-btn {
+                                    background-color: #82A70C;
+                                    color: #FFFFFF;
+                                    border: none;
+                                    padding: 12px 22px;
+                                    border-radius: 5px;
+                                    font-size: x-large;
+                                    cursor: pointer;
+                                    transition: all 1s ease;
+                                }
+                                
+                                .add-btn:hover {
+                                    transform: scale(1.1);
+                                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+                                }
+                                /* ================= TITLE ================= */
+                                
+                                #empd {
+                                    margin: 0;
+                                    font-size: 26px;
+                                    font-weight: bold;
+                                    color: #42515F;
+                                }
+                                
+                                #alpha {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding: 25px 24px;
+                                    /*background: #FFFFFF;*/
+                                    margin-bottom: 0;
+                                }
+                                
+                                #icon {
+                                    font-size: 18px;
+                                    background-color: #FFFFFF;
+                                    border-radius: 50px;
+                                    transition: all 0.3s ease;
+                                }
+                                /* ================= TABLE ================= */
+                                
+                                .table-wrapper {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 24px 24px 24px;
+                                    overflow-x: auto;
+                                }
+                                
+                                table {
+                                    width: 100%;
+                                    min-width: 950px;
+                                    border-collapse: collapse;
+                                    background: white;
+                                }
+                                
+                                thead {
+                                    background-color: #42515F;
+                                    border-radius: 3px 3px 0px 0px;
+                                    height: 67px;
+                                }
+                                
+                                tr th {
+                                    padding: 14px;
+                                    text-align: center;
+                                    color: white;
+                                    font-size: 26px;
+                                    text-transform: uppercase;
+                                }
+                                
+                                td {
+                                    text-align: center;
+                                    padding: 14px;
+                                    border: 1px solid #E3E3E3;
+                                    font-size: x-large;
+                                    color: #3D3D3D;
+                                }
+                                
+                                .search-container {
+                                    position: relative;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
+                                .search-icon {
+                                    color: #666;
+                                    font-size: 24px;
+                                    cursor: pointer;
+                                    padding: 8px;
+                                    transition: all 0.3s ease;
+                                    z-index: 2;
+                                }
+                                
+                                .search-icon:hover {
+                                    color: #82A70C;
+                                    transform: scale(1.1);
+                                }
+                                
+                                #searchInput {
+                                    width: 0;
+                                    padding: 8px 12px;
+                                    font-size: large;
+                                    border: 1px solid #ccc;
+                                    border-radius: 5px;
+                                    opacity: 0;
+                                    transition: all 0.3s ease;
+                                    margin-left: 10px;
+                                }
+                                
+                                #searchInput.show {
+                                    width: 300px;
+                                    opacity: 1;
+                                    padding: 8px 12px 8px 40px;
+                                }
+                                
+                                #searchInput:focus {
+                                    outline: none;
+                                    border-color: #82A70C;
+                                    box-shadow: 0 0 0 2px rgba(130, 167, 12, 0.2);
+                                }
+                                
+                                .search-container.active .search-icon {
+                                    position: absolute;
+                                    left: 12px;
+                                    pointer-events: none;
+                                }
+                                
+                                .search-container.active #searchInput {
+                                    display: block;
+                                }
+                                /* NAME COLUMN */
+                                
+                                .name {
+                                    font-size: x-large;
+                                    display: flex;
+                                    gap: 10px;
+                                }
+                                
+                                .name img {
+                                    width: 45px;
+                                    height: 45px;
+                                    border-radius: 50%;
+                                }
+                                /* BADGES */
+                                
+                                .badge {
+                                    color: black;
+                                    background: #E9FEA5;
+                                    border-radius: 13px;
+                                    padding: 4px 12px;
+                                    margin-right: 6px;
+                                }
+                                /* ================= FORM PAGE ================= */
+                                /* BIG FORM CONTAINER */
+                                /* ================= FORM CONTAINER ================= */
+                                
+                                .form-container {
+                                    font-size: x-large;
+                                    max-width: 1000px;
+                                    min-height: 650px;
+                                    margin: 40px auto;
+                                    background: #FFFFFF;
+                                    padding: 50px 80px;
+                                    border-radius: 10px;
+                                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                }
+                                /* ================= FORM TITLE ================= */
+                                
+                                .form-title {
+                                    text-align: left;
+                                    font-size: 36px;
+                                    font-weight: bold;
+                                    margin-bottom: 35px;
+                                }
+                                /* ================= FORM ROW ================= */
+                                
+                                .employee-form .form-row {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 20px;
+                                }
+                                /* ================= LABEL ================= */
+                                
+                                .employee-form label {
+                                    font-size: large;
+                                    width: 180px;
+                                    font-weight: bold;
+                                    color: #42515F;
+                                }
+                                /* ================= INPUTS ================= */
+                                
+                                .employee-form input,
+                                .employee-form select,
+                                .employee-form textarea {
+                                    padding: 12px;
+                                    font-size: 16px;
+                                    border: 1px solid #ccc;
+                                    border-radius: 5px;
+                                }
+                                /* ================= INLINE ITEMS (FIXED) ================= */
+                                
+                                .inline {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 15px;
+                                    /* 🔥 controls spacing */
+                                }
+                                /* reduce bootstrap me-3 effect */
+                                
+                                .inline label {
+                                    margin-right: 0 !important;
+                                    font-weight: normal;
+                                    width: auto;
+                                }
+                                /* ================= PROFILE IMAGES ================= */
+                                
+                                .profile-images {
+                                    display: flex;
+                                    gap: 15px;
+                                    align-items: center;
+                                }
+                                
+                                .profile-images img {
+                                    width: 45px;
+                                    height: 45px;
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                }
+                                /* ================= DEPARTMENT FIX ================= */
+                                
+                                .employee-form .form-row .inline input[type="checkbox"],
+                                .employee-form .form-row .inline input[type="radio"] {
+                                    margin-right: 5px;
+                                }
+                                /* keep all departments in one line */
+                                
+                                .employee-form .form-row .inline {
+                                    flex-wrap: nowrap;
+                                }
+                                /* ================= FORM BUTTONS ================= */
+                                
+                                .form-actions {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-top: 35px;
+                                }
+                                
+                                .btn {
+                                    padding: 12px 30px;
+                                    font-size: 16px;
+                                    border-radius: 5px;
+                                    border: none;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                }
+                                
+                                .green {
+                                    background: #82A70C;
+                                    color: white;
+                                }
+                                
+                                .gray {
+                                    background: #E0E0E0;
+                                    color: #42515F;
+                                }
+                                /* ================= SELECT ================= */
+                                
+                                .form-select {
+                                    border-radius: 5px;
+                                    width: 205px;
+                                }
+                                /* ================= ERROR MESSAGE ================= */
+                                /* ================= ERROR MESSAGE ================= */
+                                
+                                .field {
+                                    color: red;
+                                    display: none;
+                                    font-size: 8px;
+                                    margin-left: 180px;
+                                    /* label width ke baad align */
+                                }
+                                /* ================= ERROR BORDER ================= */
+                                
+                                .input-error {
+                                    border: 2px solid red !important;
+                                }
+                                /* ================= RESPONSIVE ================= */
+                                /* ===================== RESPONSIVE FIX (NO ZOOM REQUIRED) ===================== */
+                                /* ---------- Tablets (<= 1024px) ---------- */
+                                
+                                @media (max-width: 1024px) {
+                                    body {
+                                        font-size: 15px;
+                                    }
+                                    .form-container {
+                                        max-width: 95%;
+                                        padding: 35px 40px;
+                                    }
+                                    .form-title {
+                                        font-size: 28px;
+                                    }
+                                    .form-select {
+                                        width: 100%;
+                                    }
+                                    .inline {
+                                        flex-wrap: wrap;
+                                        gap: 10px;
+                                    }
+                                }
+                                /* ---------- Mobile (<= 768px) ---------- */
+                                
+                                @media (max-width: 768px) {
+                                    body {
+                                        font-size: 14px;
+                                    }
+                                    /* Header */
+                                    .header {
+                                        height: auto;
+                                        padding: 12px 16px;
+                                    }
+                                    .logo-text span {
+                                        font-size: 18px;
+                                    }
+                                    /* Form container */
+                                    .form-container {
+                                        width: 100%;
+                                        margin: 20px auto;
+                                        padding: 20px 16px;
+                                        border-radius: 0;
+                                        box-shadow: none;
+                                    }
+                                    .form-title {
+                                        font-size: 24px;
+                                        margin-bottom: 25px;
+                                    }
+                                    /* Stack rows */
+                                    .employee-form .form-row {
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        width: 100%;
+                                    }
+                                    .employee-form label {
+                                        width: 100%;
+                                        margin-bottom: 6px;
+                                        font-size: 14px;
+                                    }
+                                    /* Inputs full width */
+                                    .employee-form input,
+                                    .employee-form select,
+                                    .employee-form textarea {
+                                        width: 100%;
+                                        font-size: 14px;
+                                    }
+                                    /* Inline items wrap properly */
+                                    .inline {
+                                        flex-wrap: wrap;
+                                        width: 100%;
+                                        gap: 8px;
+                                    }
+                                    /* Profile images wrap */
+                                    .profile-images {
+                                        flex-wrap: wrap;
+                                        gap: 10px;
+                                    }
+                                    /* Error message alignment */
+                                    .field {
+                                        margin-left: 0;
+                                        font-size: 12px;
+                                    }
+                                    /* Buttons stack */
+                                    .form-actions {
+                                        flex-direction: column;
+                                        gap: 12px;
+                                        width: 100%;
+                                    }
+                                    .form-actions .btn {
+                                        width: 100%;
+                                        font-size: 15px;
+                                    }
+                                }
+                                /* ---------- Small Mobile (<= 480px) ---------- */
+                                
+                                @media (max-width: 480px) {
+                                    body {
+                                        font-size: 13px;
+                                    }
+                                    .form-title {
+                                        font-size: 22px;
+                                    }
+                                    .logo-box {
+                                        width: 42px;
+                                        height: 40px;
+                                        font-size: 16px;
+                                    }
+                                    .profile-images img {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                }

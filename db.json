@@ -155,6 +155,32 @@
       "salary": "20000",
       "formattedSalary": "₹ 20,000",
       "startDate": "19 August 2011"
+    },
+    {
+      "id": 1767349582835,
+      "name": "Divyansh",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "Sales"
+      ],
+      "salary": "20000",
+      "formattedSalary": "₹ 20,000",
+      "startDate": "14 September 2010"
+    },
+    {
+      "id": 1767349637267,
+      "name": "Bahubali",
+      "gender": "Male",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "departments": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "30000",
+      "formattedSalary": "₹ 30,000",
+      "startDate": "15 May 2017"
     }
   ]
 }
